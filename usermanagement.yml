@@ -14,17 +14,6 @@ spring:
     admin:
       client:
         url: http://localhost:1111/
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-      
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-spring:
   mail:
     host: smtp.gmail.com
     port: 587
@@ -36,5 +25,13 @@ spring:
           auth: true
           starttls:
             enable: true
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
